@@ -1,6 +1,6 @@
 class Player():
     def __init__(self, player_name, my_chess_com_id, my_email, session = None):
-        self.headers = f"{'User-Agent':'username: {my_chess_com_id}, email: {my_email}'}"
+        self.headers = f"{{'User-Agent':'username: {my_chess_com_id}, email: {my_email}'}}"
   
         self.player_name = player_name
         if session is None:
