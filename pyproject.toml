@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ccapit"
+version = "0.1"
+
+authors = [{name = "n-j-p"}]
+description = "Python interface to chess.com API"
+readme = "README.md"
+license = {file = "LICENSE"}
