@@ -19,7 +19,10 @@ class Player():
             self.name = self.base_info['name']
         except KeyError:
             self.name = ''
-        self.username = self.base_info['username']
+        try:
+            self.username = self.base_info['username']
+        except KeyError:
+            self.username = ''
         country_pattern = re.compile(r'/country/(\w+)')
         try:
             self.country = country_pattern.search(self.base_info['country']).group(1)
